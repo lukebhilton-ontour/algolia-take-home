@@ -1,45 +1,102 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Restaurant Locator - by Algolia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="./assets/favicon.ico" type="image/png" />
-    <link rel="stylesheet" href="index.css" />
+    <title>TableFinder — Restaurant Discovery, by Algolia</title>
+    <meta
+      name="description"
+      content="Find and book a table with instant, relevant search."
+    />
+    <link rel="icon" href="/assets/favicon.ico" type="image/png" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
-
   <body>
-    <!-- INTERFACE -->
-    <div class="page">
-      <div class="page__container"></div>
+    <div class="app" id="modern-app">
+      <header class="app-header">
+        <div class="app-header__brand">
+          <span class="app-header__logo">🍽️</span>
+          <div>
+            <h1 class="app-header__title">TableFinder</h1>
+            <p class="app-header__tagline">
+              Restaurant discovery, powered by Algolia
+            </p>
+          </div>
+        </div>
+        <button id="retro-toggle" class="retro-toggle" type="button">
+          🕹️ <span>Way Back When Machine</span>
+        </button>
+      </header>
+
+      <div id="searchbox" class="searchbox"></div>
+
+      <div class="toolbar">
+        <div id="stats" class="stats"></div>
+        <button id="geo-toggle" class="geo-toggle" type="button">
+          📍 Near me
+        </button>
+      </div>
+
+      <div class="layout">
+        <details class="filters" open>
+          <summary class="filters__summary">Filters</summary>
+          <div class="filters__body">
+            <div class="filter-group">
+              <h3 class="filter-group__title">Cuisine</h3>
+              <div id="cuisine-list"></div>
+            </div>
+            <div class="filter-group">
+              <h3 class="filter-group__title">Price</h3>
+              <div id="price-list"></div>
+            </div>
+            <div class="filter-group">
+              <h3 class="filter-group__title">Dining style</h3>
+              <div id="dining-style-list"></div>
+            </div>
+            <div id="clear-refinements" class="clear-refinements"></div>
+          </div>
+        </details>
+
+        <main class="results">
+          <div id="hits" class="hits"></div>
+          <div id="pagination" class="pagination"></div>
+        </main>
+      </div>
     </div>
-    <!-- /INTERFACE -->
 
-    <!-- TEMPLATES -->
-    <script type="text/html" id="result-template">
-      <div class="results__item">
-      	<div class="result">
-      		<div class="result__image-container">
-      		</div>
-      		<div class="result__text-container">
-      			<h1 class="result__title">{{name}}</h1>
-      			<p class="result__summary">{{food_type}} | {{neighborhood}} | {{price_range}}</p>
-      		</div>
-      	</div>
-      </div>
-    </script>
+    <div class="app app--retro" id="retro-app" hidden>
+      <header class="retro-header">
+        <p class="retro-header__marquee">
+          ☆ ─── WELCOME TO THE WAY BACK WHEN MACHINE ─── ☆
+        </p>
+        <h1 class="retro-header__title">📼 2014.exe 📼</h1>
+        <p class="retro-header__tagline">
+          The year OpenTable's search box looked... a lot like this one.
+        </p>
+        <button id="modern-toggle" class="modern-toggle" type="button">
+          ↩ back to 2026
+        </button>
+      </header>
 
-    <script type="text/html" id="no-results-template">
-      <div id="no-results-message">
-      	<p>We didn't find any results for the search <em>"{{query}}"</em>.</p>
-      	<a href="." class='clear-all'>Clear search</a>
-      </div>
-    </script>
-    <!-- /TEMPLATES -->
+      <div id="retro-searchbox" class="retro-searchbox"></div>
 
-    <!-- SCRIPTS -->
-    <script src="./index.js"></script>
-    <!-- /SCRIPTS -->
+      <div id="retro-category-list" class="retro-category-list"></div>
+
+      <div id="retro-stats" class="retro-stats"></div>
+
+      <div id="retro-hits" class="retro-hits"></div>
+      <div id="retro-pagination" class="retro-pagination"></div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>

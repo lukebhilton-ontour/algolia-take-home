@@ -1,0 +1,242 @@
+[
+  {
+    "objectID": "gaming-destiny",
+    "category": "Gaming",
+    "emoji": "🎮",
+    "name": "Destiny",
+    "description": "Bungie's shared-world shooter launched, spawning a decade of Guardians grinding for loot.",
+    "tags": ["Bungie", "shooter", "MMO"]
+  },
+  {
+    "objectID": "gaming-mario-kart-8",
+    "category": "Gaming",
+    "emoji": "🎮",
+    "name": "Mario Kart 8",
+    "description": "Anti-gravity racing hit the Wii U and instantly became the go-to couch multiplayer game.",
+    "tags": ["Nintendo", "racing", "Wii U"]
+  },
+  {
+    "objectID": "gaming-dragon-age-inquisition",
+    "category": "Gaming",
+    "emoji": "🎮",
+    "name": "Dragon Age: Inquisition",
+    "description": "BioWare's sprawling RPG took home Game of the Year.",
+    "tags": ["BioWare", "RPG", "Game of the Year"]
+  },
+  {
+    "objectID": "gaming-far-cry-4",
+    "category": "Gaming",
+    "emoji": "🎮",
+    "name": "Far Cry 4",
+    "description": "Ubisoft sent players to the fictional Himalayan region of Kyrat.",
+    "tags": ["Ubisoft", "open world", "shooter"]
+  },
+  {
+    "objectID": "gaming-shadow-of-mordor",
+    "category": "Gaming",
+    "emoji": "🎮",
+    "name": "Middle-earth: Shadow of Mordor",
+    "description": "Introduced the Nemesis System, letting orcs remember and hold grudges against you.",
+    "tags": ["Monolith", "Lord of the Rings", "Nemesis System"]
+  },
+  {
+    "objectID": "gaming-dark-souls-2",
+    "category": "Gaming",
+    "emoji": "🎮",
+    "name": "Dark Souls II",
+    "description": "FromSoftware kept the notoriously punishing series going.",
+    "tags": ["FromSoftware", "RPG", "difficult"]
+  },
+  {
+    "objectID": "gaming-titanfall",
+    "category": "Gaming",
+    "emoji": "🎮",
+    "name": "Titanfall",
+    "description": "Wall-running, mech-piloting shooter that helped launch the Xbox One era.",
+    "tags": ["Respawn", "mechs", "shooter"]
+  },
+  {
+    "objectID": "gaming-watch-dogs",
+    "category": "Gaming",
+    "emoji": "🎮",
+    "name": "Watch Dogs",
+    "description": "Ubisoft's hacker-thriller open world set in Chicago.",
+    "tags": ["Ubisoft", "hacking", "open world"]
+  },
+  {
+    "objectID": "gaming-alien-isolation",
+    "category": "Gaming",
+    "emoji": "🎮",
+    "name": "Alien: Isolation",
+    "description": "A survival horror game that made one relentless Xenomorph genuinely terrifying.",
+    "tags": ["Creative Assembly", "horror", "Alien"]
+  },
+  {
+    "objectID": "gaming-hearthstone",
+    "category": "Gaming",
+    "emoji": "🎮",
+    "name": "Hearthstone",
+    "description": "Blizzard's card game officially launched out of beta.",
+    "tags": ["Blizzard", "card game", "Warcraft"]
+  },
+  {
+    "objectID": "gaming-the-sims-4",
+    "category": "Gaming",
+    "emoji": "🎮",
+    "name": "The Sims 4",
+    "description": "EA's life simulator got a from-the-ground-up sequel.",
+    "tags": ["EA", "simulation", "life sim"]
+  },
+  {
+    "objectID": "gaming-bayonetta-2",
+    "category": "Gaming",
+    "emoji": "🎮",
+    "name": "Bayonetta 2",
+    "description": "Platinum Games' stylish witch returned, exclusively on Wii U.",
+    "tags": ["Platinum Games", "action", "Wii U"]
+  },
+  {
+    "objectID": "gaming-wolfenstein-new-order",
+    "category": "Gaming",
+    "emoji": "🎮",
+    "name": "Wolfenstein: The New Order",
+    "description": "MachineGames rebooted the classic Nazi-fighting shooter for a new generation.",
+    "tags": ["MachineGames", "shooter", "reboot"]
+  },
+  {
+    "objectID": "console-ps4",
+    "category": "Consoles",
+    "emoji": "🕹️",
+    "name": "PlayStation 4",
+    "description": "Released in late 2013, but 2014 was its breakout year.",
+    "tags": ["Sony", "console"]
+  },
+  {
+    "objectID": "console-xbox-one",
+    "category": "Consoles",
+    "emoji": "🕹️",
+    "name": "Xbox One",
+    "description": "Also released late 2013, in full swing throughout 2014.",
+    "tags": ["Microsoft", "console"]
+  },
+  {
+    "objectID": "console-wii-u",
+    "category": "Consoles",
+    "emoji": "🕹️",
+    "name": "Wii U",
+    "description": "Nintendo's flagship console before the Switch existed. No Switch. No Steam Deck. No PS5.",
+    "tags": ["Nintendo", "console"]
+  },
+  {
+    "objectID": "movie-guardians-of-the-galaxy",
+    "category": "Movies",
+    "emoji": "📺",
+    "name": "Guardians of the Galaxy",
+    "description": "Marvel bet on a talking raccoon and a walking tree, and it paid off big.",
+    "tags": ["Marvel", "sci-fi", "comedy"]
+  },
+  {
+    "objectID": "movie-interstellar",
+    "category": "Movies",
+    "emoji": "📺",
+    "name": "Interstellar",
+    "description": "Christopher Nolan sent Matthew McConaughey through a wormhole.",
+    "tags": ["Christopher Nolan", "sci-fi"]
+  },
+  {
+    "objectID": "movie-lego-movie",
+    "category": "Movies",
+    "emoji": "📺",
+    "name": "The Lego Movie",
+    "description": "Everything was awesome, including the box office.",
+    "tags": ["animation", "Lego", "comedy"]
+  },
+  {
+    "objectID": "movie-captain-america-winter-soldier",
+    "category": "Movies",
+    "emoji": "📺",
+    "name": "Captain America: Winter Soldier",
+    "description": "The MCU movie that turned Cap into a paranoid political thriller hero.",
+    "tags": ["Marvel", "action"]
+  },
+  {
+    "objectID": "movie-edge-of-tomorrow",
+    "category": "Movies",
+    "emoji": "📺",
+    "name": "Edge of Tomorrow",
+    "description": "Tom Cruise lived, died, and repeated his way through an alien invasion.",
+    "tags": ["sci-fi", "Tom Cruise"]
+  },
+  {
+    "objectID": "movie-john-wick",
+    "category": "Movies",
+    "emoji": "📺",
+    "name": "John Wick",
+    "description": "A man, a dog, a car, and a franchise were born.",
+    "tags": ["action", "Keanu Reeves"]
+  },
+  {
+    "objectID": "movie-big-hero-6",
+    "category": "Movies",
+    "emoji": "📺",
+    "name": "Big Hero 6",
+    "description": "Disney introduced the world to Baymax.",
+    "tags": ["Disney", "animation"]
+  },
+  {
+    "objectID": "movie-how-to-train-your-dragon-2",
+    "category": "Movies",
+    "emoji": "📺",
+    "name": "How to Train Your Dragon 2",
+    "description": "Hiccup and Toothless returned for a bigger, higher-flying sequel.",
+    "tags": ["DreamWorks", "animation"]
+  },
+  {
+    "objectID": "tech-amazon-echo",
+    "category": "Technology",
+    "emoji": "📱",
+    "name": "Amazon Echo announced",
+    "description": "Alexa begins. Nobody knew yet how many kitchens she'd end up in.",
+    "tags": ["Amazon", "Alexa", "smart speaker"]
+  },
+  {
+    "objectID": "tech-apple-pay",
+    "category": "Technology",
+    "emoji": "📱",
+    "name": "Apple Pay launched",
+    "description": "Tap-to-pay started making wallets feel optional.",
+    "tags": ["Apple", "payments"]
+  },
+  {
+    "objectID": "tech-iphone-6",
+    "category": "Technology",
+    "emoji": "📱",
+    "name": "iPhone 6",
+    "description": "Apple finally went bigger with the screen.",
+    "tags": ["Apple", "smartphone"]
+  },
+  {
+    "objectID": "tech-iphone-6-plus",
+    "category": "Technology",
+    "emoji": "📱",
+    "name": "iPhone 6 Plus",
+    "description": "Bigger still, and the start of the phablet era.",
+    "tags": ["Apple", "smartphone"]
+  },
+  {
+    "objectID": "tech-android-lollipop",
+    "category": "Technology",
+    "emoji": "📱",
+    "name": "Android Lollipop",
+    "description": "Google introduced Material Design to the world.",
+    "tags": ["Google", "Android"]
+  },
+  {
+    "objectID": "tech-windows-phone",
+    "category": "Technology",
+    "emoji": "📱",
+    "name": "Windows Phone",
+    "description": "Still out there, still trying to compete.",
+    "tags": ["Microsoft", "smartphone"]
+  }
+]
