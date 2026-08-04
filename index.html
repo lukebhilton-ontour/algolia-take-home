@@ -24,7 +24,7 @@
     <div class="app" id="modern-app">
       <header class="app-header">
         <div class="app-header__brand">
-          <span class="app-header__logo">🍽️</span>
+          <span class="brand-badge">🍽️</span>
           <div>
             <h1 class="app-header__title">TableFinder</h1>
             <p class="app-header__tagline">
@@ -37,40 +37,41 @@
         </button>
       </header>
 
-      <div id="searchbox" class="searchbox"></div>
+      <div class="search-section">
+        <h2 class="search-section__title">Search</h2>
+        <div id="searchbox" class="searchbox"></div>
+      </div>
 
-      <div class="toolbar">
-        <div id="stats" class="stats"></div>
+      <div class="filter-bar">
+        <div class="filter-pill" data-filter="cuisine">
+          <button class="filter-pill__trigger" type="button">
+            Cuisine <span class="filter-pill__chevron">⌄</span>
+          </button>
+          <div class="filter-pill__panel" id="cuisine-list"></div>
+        </div>
+        <div class="filter-pill" data-filter="price">
+          <button class="filter-pill__trigger" type="button">
+            Price <span class="filter-pill__chevron">⌄</span>
+          </button>
+          <div class="filter-pill__panel" id="price-list"></div>
+        </div>
+        <div class="filter-pill" data-filter="dining-style">
+          <button class="filter-pill__trigger" type="button">
+            Dining style <span class="filter-pill__chevron">⌄</span>
+          </button>
+          <div class="filter-pill__panel" id="dining-style-list"></div>
+        </div>
         <button id="geo-toggle" class="geo-toggle" type="button">
           📍 Near me
         </button>
+        <div id="clear-refinements" class="clear-refinements"></div>
+        <div id="stats" class="stats"></div>
       </div>
 
-      <div class="layout">
-        <details class="filters" open>
-          <summary class="filters__summary">Filters</summary>
-          <div class="filters__body">
-            <div class="filter-group">
-              <h3 class="filter-group__title">Cuisine</h3>
-              <div id="cuisine-list"></div>
-            </div>
-            <div class="filter-group">
-              <h3 class="filter-group__title">Price</h3>
-              <div id="price-list"></div>
-            </div>
-            <div class="filter-group">
-              <h3 class="filter-group__title">Dining style</h3>
-              <div id="dining-style-list"></div>
-            </div>
-            <div id="clear-refinements" class="clear-refinements"></div>
-          </div>
-        </details>
-
-        <main class="results">
-          <div id="hits" class="hits"></div>
-          <div id="pagination" class="pagination"></div>
-        </main>
-      </div>
+      <main class="results">
+        <div id="hits" class="hits"></div>
+        <div id="pagination" class="pagination"></div>
+      </main>
     </div>
 
     <div class="app app--retro" id="retro-app" hidden>

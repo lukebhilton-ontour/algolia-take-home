@@ -132,6 +132,57 @@ document.querySelector("#hits").addEventListener(
 );
 
 // ---------------------------------------------------------------------------
+// Filter dropdown pills
+// ---------------------------------------------------------------------------
+
+const filterPills = document.querySelectorAll(".filter-pill");
+const PILL_ATTRIBUTES = {
+  cuisine: "cuisine",
+  price: "price_range",
+  "dining-style": "dining_style",
+};
+
+filterPills.forEach((pill) => {
+  pill
+    .querySelector(".filter-pill__trigger")
+    .addEventListener("click", (event) => {
+      event.stopPropagation();
+      const isOpen = pill.classList.contains("filter-pill--open");
+      filterPills.forEach((p) => p.classList.remove("filter-pill--open"));
+      if (!isOpen) pill.classList.add("filter-pill--open");
+    });
+});
+
+document.addEventListener("click", (event) => {
+  if (!event.target.closest(".filter-pill")) {
+    filterPills.forEach((p) => p.classList.remove("filter-pill--open"));
+  }
+});
+
+search.on("render", () => {
+  filterPills.forEach((pill) => {
+    const attribute = PILL_ATTRIBUTES[pill.dataset.filter];
+    const count = search.helper.getRefinements(attribute).length;
+    const trigger = pill.querySelector(".filter-pill__trigger");
+    let badge = trigger.querySelector(".filter-pill__badge");
+
+    if (count > 0 && !badge) {
+      badge = document.createElement("span");
+      badge.className = "filter-pill__badge";
+      trigger.appendChild(badge);
+    }
+
+    if (badge) {
+      if (count > 0) {
+        badge.textContent = count;
+      } else {
+        badge.remove();
+      }
+    }
+  });
+});
+
+// ---------------------------------------------------------------------------
 // Geo search ("near me")
 // ---------------------------------------------------------------------------
 
