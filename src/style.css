@@ -398,7 +398,12 @@ button {
 }
 
 .hit__name {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
   margin: 0 0 6px;
+  min-height: 39px;
   font-size: 15px;
   font-weight: 700;
   line-height: 1.3;
