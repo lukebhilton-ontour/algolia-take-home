@@ -1,6 +1,6 @@
 # TableFinder — Algolia Restaurant Discovery Demo
 
-A restaurant discovery search experience built with [Algolia](https://algolia.com) and [InstantSearch.js](https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/js/), for the Algolia Solutions Engineer take-home assignment.
+A restaurant discovery search experience built with [Algolia](https://algolia.com) and [InstantSearch.js](https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/js/), for the Algolia Learning Track.
 
 ## What's here
 
