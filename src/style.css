@@ -158,6 +158,14 @@ button {
   box-shadow: 0 0 0 3px rgba(218, 55, 67, 0.15);
 }
 
+/* Chrome renders its own cancel button for type="search" inputs, which
+   stacks with InstantSearch's own .ais-SearchBox-reset button below. */
+.ais-SearchBox-input::-webkit-search-cancel-button,
+.ais-SearchBox-input::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
 .ais-SearchBox-submit,
 .ais-SearchBox-loadingIndicator {
   display: none;
