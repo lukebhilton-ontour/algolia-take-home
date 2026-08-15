@@ -1,5 +1,6 @@
 import algoliasearch from "algoliasearch/lite";
 import instantsearch from "instantsearch.js";
+import insightsClient from "search-insights";
 import {
   searchBox,
   hits,
@@ -15,6 +16,12 @@ const searchClient = algoliasearch(
   import.meta.env.VITE_ALGOLIA_SEARCH_API_KEY
 );
 
+insightsClient("init", {
+  appId: import.meta.env.VITE_ALGOLIA_APP_ID,
+  apiKey: import.meta.env.VITE_ALGOLIA_SEARCH_API_KEY,
+  useCookie: true,
+});
+
 // The dataset's image_url values point at OpenTable's old image CDN, and many
 // are now dead links. Broken photos fall back to this inline placeholder
 // rather than the browser's default broken-image icon.
@@ -29,10 +36,11 @@ const search = instantsearch({
   indexName: "restaurants",
   searchClient,
   routing: true,
+  insights: true,
 });
 
 search.addWidgets([
-  configure({ hitsPerPage: 12 }),
+  configure({ hitsPerPage: 12, clickAnalytics: true }),
 
   searchBox({
     container: "#searchbox",
@@ -81,7 +89,7 @@ search.addWidgets([
   hits({
     container: "#hits",
     templates: {
-      item(hit, { html, components }) {
+      item(hit, { html, components, sendEvent }) {
         return html`<article class="hit">
           <img class="hit__image" src="${hit.image_url}" alt="" loading="lazy" />
           <div class="hit__body">
@@ -102,6 +110,7 @@ search.addWidgets([
             href="${hit.reserve_url}"
             target="_blank"
             rel="noopener"
+            onClick=${() => sendEvent("conversion", hit, "Reserve Click")}
           >
             Reserve
           </a>
